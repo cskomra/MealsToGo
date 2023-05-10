@@ -1,6 +1,19 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import styled from "styled-components/native";
+import { Text } from "react-native";
 import { Card } from "react-native-paper";
+
+const Title = styled(Text)`
+  padding: 16px;
+  color: red;
+`;
+const RestaurantView = styled(Card)`
+  backgroundcolor: "white";
+`;
+const HeroImage = styled(Card.Cover)`
+  padding: 16px;
+  backgroundcolor: "white";
+`;
 
 export const RestaurantCard = ({ restaurant = {} }) => {
   const {
@@ -15,19 +28,9 @@ export const RestaurantCard = ({ restaurant = {} }) => {
     isClosedTemporarily = false,
   } = restaurant;
   return (
-    <Card key={name} elevation={5} style={styles.card}>
-      <Card.Cover source={{ uri: photos[0] }} style={styles.cover} />
-      <Card.Title title={name} />
-    </Card>
+    <RestaurantView key={name} elevation={5}>
+      <HeroImage source={{ uri: photos[0] }} />
+      <Title>{name}</Title>
+    </RestaurantView>
   );
 };
-
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: "white",
-  },
-  cover: {
-    padding: 20,
-    backgroundColor: "white",
-  },
-});
