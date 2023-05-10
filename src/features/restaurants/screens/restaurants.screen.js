@@ -6,16 +6,16 @@ import { RestaurantCard } from "../components/restaurant-card.component";
 
 const statusBarHeight = Platform.OS === "android" ? StatusBar.currentHeight : 0;
 
-const RestaurantScreen = styled(SafeAreaView)`
+const SafeArea = styled(SafeAreaView)`
   flex: 1;
   margin-top: ${statusBarHeight}px;
 `;
 
-const Search = styled(View)`
+const SearchContainer = styled(View)`
   padding: 16px;
 `;
 
-const List = styled(View)`
+const ListContainer = styled(View)`
   flex: 1;
   background-color: blue;
   padding: 16px;
@@ -23,13 +23,13 @@ const List = styled(View)`
 
 export const RestaurantsScreen = () => {
   return (
-    <RestaurantScreen>
-      <Search>
+    <SafeArea>
+      <SearchContainer>
         <Searchbar />
-      </Search>
-      <List>
+      </SearchContainer>
+      <ListContainer>
         <RestaurantCard />
-      </List>
-    </RestaurantScreen>
+      </ListContainer>
+    </SafeArea>
   );
 };
