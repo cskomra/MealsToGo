@@ -5,13 +5,14 @@ import { Card } from "react-native-paper";
 
 const Title = styled(Text)`
   padding: 16px;
+  background-color: white;
 `;
 const RestaurantView = styled(Card)`
-  backgroundcolor: "white";
+  background-color: white;
 `;
 const HeroImage = styled(Card.Cover)`
   padding: 16px;
-  backgroundcolor: "white";
+  background-color: white;
 `;
 
 export const RestaurantCard = ({ restaurant = {} }) => {
