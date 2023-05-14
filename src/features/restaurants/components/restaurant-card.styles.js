@@ -7,6 +7,7 @@ export const Address = styled.Text`
 `;
 export const RestaurantView = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
+  margin-bottom: ${(props) => props.theme.space[3]};
 `;
 export const HeroImage = styled(Card.Cover)`
   padding: ${(props) => props.theme.space[3]};
