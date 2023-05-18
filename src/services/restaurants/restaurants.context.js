@@ -3,7 +3,6 @@ import {
   restaurantsRequest,
   restaurantsTransform,
 } from "./restaurants.service";
-import { Children } from "react/cjs/react.production.min";
 
 export const RestaurantContext = createContext();
 
