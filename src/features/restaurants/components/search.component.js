@@ -13,7 +13,7 @@ export const Search = () => {
 
   useEffect(() => {
     search(searchKeyword);
-  }, {});
+  }, []);
 
   return (
     <SearchContainer>
