@@ -33,8 +33,6 @@ export default function App() {
     return null;
   }
 
-  const screenOptions = () => {};
-
   return (
     <>
       <ThemeProvider theme={theme}>
