@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components/native";
-import { FlatList, Pressable, TouchableOpacity } from "react-native";
+import { FlatList, TouchableOpacity } from "react-native";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import { RestaurantCard } from "../components/restaurant-card.component";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
