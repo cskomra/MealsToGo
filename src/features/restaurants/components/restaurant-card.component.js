@@ -34,7 +34,7 @@ export const RestaurantCard = ({ restaurant = {} }) => {
 
   return (
     <RestaurantView key={name} elevation={5}>
-      <Favorite />
+      <Favorite restaurant={restaurant} />
       <HeroImage source={{ uri: photos[0] }} />
       <Info>
         <Text variant="label">{name}</Text>

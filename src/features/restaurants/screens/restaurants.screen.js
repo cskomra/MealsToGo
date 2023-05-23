@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components/native";
 import { FlatList, TouchableOpacity } from "react-native";
 import { SafeArea } from "../../../components/utility/safe-area.component";
+import { FavoritesBar } from "../../../components/favorites/favorites-bar.component";
 import { RestaurantCard } from "../components/restaurant-card.component";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
@@ -24,6 +25,7 @@ const RestaurantList = styled(FlatList).attrs({
 
 export const RestaurantsScreen = ({ navigation }) => {
   const { restaurants, isLoading } = useContext(RestaurantContext);
+  const [isToggled, setIsToggled] = useState(false);
   return (
     <SafeArea>
       {isLoading && (
@@ -31,7 +33,11 @@ export const RestaurantsScreen = ({ navigation }) => {
           <Loader size={50} animating={true} color={MD2Colors.blue300} />
         </LoaderContainer>
       )}
-      <Search />
+      <Search 
+        isFavoritesToggled={isToggled}
+        onFavoritesToggled={() => setIsToggled(!isToggled)}
+      />
+      {isToggled && <FavoritesBar />}
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => {
