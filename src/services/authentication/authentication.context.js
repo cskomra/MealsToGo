@@ -13,12 +13,14 @@ export const AuthenticationContextProvider = ({ children }) => {
         loginRequest(email, password)
         .then((userCredential) => {
             setUser(userCredential.user);
+            console.log("user: ", userCredential.user);
             setIsAuthenticated(true);
             setIsLoading(false);
           }) 
           .catch((err) => { 
             const errorCode = err.code;
             const errorMessage = err.message;
+            setError(`${errorCode}: ${errorMessage}`);
             console.log("Auth Error code: ", errorCode, "Error message: ", errorMessage)})
     };
 
