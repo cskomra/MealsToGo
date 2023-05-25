@@ -6,18 +6,21 @@ import {
     AccountCover,
     AccountContainer,
     AuthButton,
-    AuthInput
+    AuthInput,
+    Title,
+    ErrorContainer,
 } from "../components/account.styles";
 import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
 
-export const LoginScreen = () => {
+export const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const { onLogin, error } = useContext(AuthenticationContext);
 
     return <AccountBackground>
         <AccountCover />
+        <Title>Meals to Go</Title>
         <AccountContainer>
             <AuthInput 
                 label="Email"
@@ -37,7 +40,9 @@ export const LoginScreen = () => {
                 secure
                 onChangeText={(p) => setPassword(p)}
             />
-            <Spacer size="large" />
+            <ErrorContainer>
+                {error && (<Text style={{paddingBottom: 16}} variant="error">{error}</Text>)}
+            </ErrorContainer>
             <AuthButton 
                 icon="lock-open-outline"
                 mode="contained"
@@ -45,11 +50,14 @@ export const LoginScreen = () => {
             >
                 Login
             </AuthButton>
-            {error && (
-                <Spacer size="large">
-                    <Text variant="error">{error}</Text>
-                </Spacer>
-            )}
+            
         </AccountContainer>
+        <Spacer size="large" />
+            <AuthButton 
+                mode="contained"
+                onPress={() => navigation.goBack()}
+            >
+                Back
+            </AuthButton>
     </AccountBackground>;
 }
