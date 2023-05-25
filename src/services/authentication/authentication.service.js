@@ -1,11 +1,25 @@
 import { firebaseConfig } from "../../firebaseConfig";
 import { initializeApp } from "firebase/app";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { 
+    getAuth, 
+    signInWithEmailAndPassword, 
+    createUserWithEmailAndPassword,
+    onAuthStateChanged
+} from "firebase/auth";
+
+initializeApp(firebaseConfig);
+const auth = getAuth();
 
 export const loginRequest = async (email, password, handlers) => {
-    const firebaseApp = initializeApp(firebaseConfig);
-    const auth = getAuth(firebaseApp);
     signInWithEmailAndPassword(auth, email, password)
     .then(handlers.success)
-    .catch(handlers.error)
+    .catch(handlers.error);
+    onAuthStateChanged(auth, handlers.stateChange);
+};
+
+export const registrationRequest = (email, password, handlers) => {
+    createUserWithEmailAndPassword(auth, email, password)
+    .then(handlers.success)
+    .catch(handlers.error);
+    onAuthStateChanged(auth, handlers.stateChange);
 };
