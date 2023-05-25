@@ -19,6 +19,8 @@ const hint = (theme) => `
 
 const error = (theme) => `
     color: ${theme.colors.text.error};
+    max-width: 200px;
+    text-align: center;
 `;
 
 const caption = (theme) => `

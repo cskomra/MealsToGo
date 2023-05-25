@@ -8,25 +8,26 @@ export const AuthenticationContextProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [error, setError] = useState(null);
 
-    const onLogin = (email, password) => {
-        setIsLoading(true);
-        loginRequest(email, password)
-        .then((userCredential) => {
+    const authHandlers = {
+        success: (userCredential) => {
             setUser(userCredential.user);
-            console.log("user: ", userCredential.user);
-            setIsAuthenticated(true);
             setIsLoading(false);
-          }) 
-          .catch((err) => { 
-            const errorCode = err.code;
-            const errorMessage = err.message;
-            setError(`${errorCode}: ${errorMessage}`);
-            console.log("Auth Error code: ", errorCode, "Error message: ", errorMessage)})
-    };
+        },
+        error: (e) => { 
+            setIsLoading(false);
+            setError(e.toString());
+        },
+    }
+
+    const onLogin = async (email, password) => {
+        setIsLoading(true);
+        loginRequest(email, password, authHandlers);
+    }
 
     return (
         <AuthenticationContext.Provider
             value={{
+                isAuthenticated: !!user,
                 user,
                 isLoading,
                 error,
