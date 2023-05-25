@@ -4,7 +4,8 @@ import {
     getAuth, 
     signInWithEmailAndPassword, 
     createUserWithEmailAndPassword,
-    onAuthStateChanged
+    onAuthStateChanged,
+    signOut
 } from "firebase/auth";
 
 initializeApp(firebaseConfig);
@@ -23,3 +24,8 @@ export const registrationRequest = (email, password, handlers) => {
     .catch(handlers.error);
     onAuthStateChanged(auth, handlers.stateChange);
 };
+
+export const logoutRequest = (handler) => {
+    signOut(auth)
+    .then(handler)
+}
