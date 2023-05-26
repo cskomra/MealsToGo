@@ -44,4 +44,12 @@ export const ErrorContainer = styled.View`
     align-items: center;
     align-self: center;
     margin: ${(props) => props.theme.space[2]} 0;
-`
+`;
+
+export const AnimationWrapper = styled.View`
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 30px;
+    padding: ${(props) => props.theme.space[2]};
+`;
