@@ -24,7 +24,6 @@ const error = (theme) => `
 const caption = (theme) => `
     font-size: ${theme.fontSizes.caption};
     font-weight: ${theme.fontWeights.bold};
-    color: ${theme.colors.text.error};
 `;
 
 const label = (theme) => `
