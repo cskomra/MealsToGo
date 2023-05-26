@@ -1,9 +1,8 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components/native";
-import { FlatList, TouchableOpacity } from "react-native";
+import { FlatList } from "react-native";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import { FavoritesBar } from "../../../components/favorites/favorites-bar.component";
-import { RestaurantCard } from "../components/restaurant-card.component";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
 import { FavoritesContext } from "../../../services/favorites/favorites.context";
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
@@ -46,7 +45,7 @@ export const RestaurantsScreen = ({ navigation }) => {
           onNavigate={navigation.navigate}
         />
       }
-      <ListRestaurants restaurantData={restaurants} navigation={navigation}/>
+        <ListRestaurants restaurantData={restaurants} navigation={navigation}/>
     </SafeArea>
   );
 };
