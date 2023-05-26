@@ -8,6 +8,7 @@ import { RestaurantContext } from "../../../services/restaurants/restaurants.con
 import { FavoritesContext } from "../../../services/favorites/favorites.context";
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
 import { Search } from "../components/search.component";
+import { ListRestaurants } from "../../../components/utility/list-restaurants.component";
 
 const Loader = styled(ActivityIndicator)`
   margin-left: -25px;
@@ -45,17 +46,7 @@ export const RestaurantsScreen = ({ navigation }) => {
           onNavigate={navigation.navigate}
         />
       }
-      <RestaurantList
-        data={restaurants}
-        renderItem={({ item }) => {
-          return(
-            <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", { restaurant: item })}>
-              <RestaurantCard restaurant={item} />
-            </TouchableOpacity>
-          )
-      }}
-        keyExtractor={(item) => item.name}
-      />
+      <ListRestaurants restaurantData={restaurants} navigation={navigation}/>
     </SafeArea>
   );
 };
