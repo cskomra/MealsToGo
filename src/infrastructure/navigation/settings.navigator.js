@@ -19,7 +19,7 @@ export const SettingsNavigator = ({ route, navigation }) => {
                 options={{
                     header: () => null,
                 }}
-                name="Settings"
+                name="Back to Settings"
                 component={SettingsScreen}
             />
             <SettingsStack.Screen name="Favorites" component={FavoritesScreen} />
