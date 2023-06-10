@@ -1,0 +1,886 @@
+[debug] [2023-06-10T22:28:42.484Z] ----------------------------------------------------------------------
+[debug] [2023-06-10T22:28:42.485Z] Command:       /Users/connieskomra/.nvm/versions/node/v18.16.0/bin/node /opt/homebrew/bin/firebase emulators:start --only functions
+[debug] [2023-06-10T22:28:42.485Z] CLI Version:   12.2.1
+[debug] [2023-06-10T22:28:42.485Z] Platform:      darwin
+[debug] [2023-06-10T22:28:42.485Z] Node Version:  v18.16.0
+[debug] [2023-06-10T22:28:42.491Z] Time:          Sat Jun 10 2023 18:28:42 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-06-10T22:28:42.491Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-10T22:28:42.520Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-10T22:28:42.520Z] > authorizing via signed-in user (connieskomra@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-06-10T22:28:42.706Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-10T22:28:42.707Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-06-10T22:28:42.711Z] [hub] writing locator at /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/hub-mealstogo-3f887.json
+[debug] [2023-06-10T22:28:42.821Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-10T22:28:42.821Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-10T22:28:42.821Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-06-10T22:28:42.822Z] defaultcredentials: writing to file /Users/connieskomra/.config/firebase/connieskomra_gmail_com_application_default_credentials.json
+[debug] [2023-06-10T22:28:42.825Z] Setting GAC to /Users/connieskomra/.config/firebase/connieskomra_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/connieskomra/.config/firebase/connieskomra_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-10T22:28:42.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-3f887/adminSdkConfig [none]
+[debug] [2023-06-10T22:28:43.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-3f887/adminSdkConfig 200
+[debug] [2023-06-10T22:28:43.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-3f887/adminSdkConfig {"projectId":"mealstogo-3f887","storageBucket":"mealstogo-3f887.appspot.com"}
+[debug] [2023-06-10T22:28:43.084Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-06-10T22:28:43.084Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-06-10T22:28:43.084Z] Starting Emulator UI with command {"binary":"node","args":["/Users/connieskomra/.cache/firebase/emulators/ui-v1.11.6/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/connieskomra/.cache/firebase/emulators/ui-v1.11.6/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-06-10T22:28:43.164Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-06-10T22:28:43.164Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/connieskomra/Documents/code/MealsToGo/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/connieskomra/Documents/code/MealsToGo/functions\" for Cloud Functions..."}}
+[debug] [2023-06-10T22:28:43.347Z] Validating nodejs source
+[debug] [2023-06-10T22:28:43.865Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:28:43.865Z] Building nodejs source
+[debug] [2023-06-10T22:28:43.865Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:28:43.867Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:28:43.870Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:28:43.979Z] Serving at port 8046
+
+[debug] [2023-06-10T22:28:44.062Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:28:44.066Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://127.0.0.1:5001/mealstogo-3f887/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-3f887/us-central1/geocode)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-06-10T22:28:57.848Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:28:58.850Z] Validating nodejs source
+[debug] [2023-06-10T22:28:59.572Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:28:59.572Z] Building nodejs source
+[debug] [2023-06-10T22:28:59.572Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:28:59.574Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:28:59.575Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:28:59.678Z] Serving at port 8618
+
+[debug] [2023-06-10T22:28:59.863Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:28:59.865Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] ✔  functions[us-central1-placesNearby]: http function initialized (http://127.0.0.1:5001/mealstogo-3f887/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-3f887/us-central1/placesNearby)."}}
+[debug] [2023-06-10T22:29:26.449Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:29:26.448Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:29:26.450Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:29:26.448Z"],"workRunningCount":1}
+[debug] [2023-06-10T22:29:26.451Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby --> us-central1-placesNearby
+[debug] [2023-06-10T22:29:26.453Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T22:29:26.454Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby, mapping to path=/"}}
+[debug] [2023-06-10T22:29:26.461Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:29:26.462Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2023-06-10T22:29:27.044Z] [runtime-status] [99223] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.045Z] [runtime-status] [99223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.045Z] [runtime-status] [99223] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T22:29:27.045Z] [runtime-status] [99223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.152Z] [runtime-status] [99223] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T22:29:27.152Z] [runtime-status] [99223] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T22:29:27.152Z] [runtime-status] [99223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.152Z] [runtime-status] [99223] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.154Z] [runtime-status] [99223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:29:27.154Z] [runtime-status] [99223] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T22:29:27.162Z] [runtime-status] [99223] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T22:29:27.162Z] [runtime-status] [99223] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_49de90c1d39a46a8.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99223] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_49de90c1d39a46a8.sock"}}
+[debug] [2023-06-10T22:29:27.177Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: IDLE"}}
+[debug] [2023-06-10T22:29:27.177Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T22:29:27.178Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: BUSY"}}
+[debug] [2023-06-10T22:29:27.180Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 2.532ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 2.532ms"}}
+[debug] [2023-06-10T22:29:27.180Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: IDLE"}}
+[debug] [2023-06-10T22:29:27.181Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T22:29:27.181Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T22:29:27.181Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:35:12.272Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:35:13.281Z] Validating nodejs source
+[debug] [2023-06-10T22:35:14.001Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:35:14.002Z] Building nodejs source
+[debug] [2023-06-10T22:35:14.002Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:35:14.003Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:35:14.003Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:35:14.157Z] Serving at port 8280
+
+[debug] [2023-06-10T22:35:14.343Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:35:14.345Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:35:14.351Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:35:14.351Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: FINISHING"}}
+[debug] [2023-06-10T22:35:14.358Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: exited"}}
+[debug] [2023-06-10T22:35:14.358Z] [worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-65144d58-e892-48e0-9264-b266e70b729b]: FINISHED"}}
+[debug] [2023-06-10T22:36:06.146Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/antwerp.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/antwerp.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:36:07.151Z] Validating nodejs source
+[debug] [2023-06-10T22:36:07.644Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:36:07.644Z] Building nodejs source
+[debug] [2023-06-10T22:36:07.644Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:36:07.645Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:36:07.646Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:36:07.749Z] Serving at port 8983
+
+[debug] [2023-06-10T22:36:07.824Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:36:07.826Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:37:11.613Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/chicago.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/chicago.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:37:12.616Z] Validating nodejs source
+[debug] [2023-06-10T22:37:13.138Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:37:13.138Z] Building nodejs source
+[debug] [2023-06-10T22:37:13.138Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:37:13.139Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:37:13.140Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:37:13.251Z] Serving at port 8625
+
+[debug] [2023-06-10T22:37:13.332Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:37:13.336Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:37:50.343Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/san_francisco.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/san_francisco.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:37:51.346Z] Validating nodejs source
+[debug] [2023-06-10T22:37:51.827Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:37:51.827Z] Building nodejs source
+[debug] [2023-06-10T22:37:51.827Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:37:51.828Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:37:51.829Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:37:51.947Z] Serving at port 8226
+
+[debug] [2023-06-10T22:37:52.036Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:37:52.039Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:38:11.028Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/toronto.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/toronto.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:38:12.034Z] Validating nodejs source
+[debug] [2023-06-10T22:38:12.564Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:38:12.565Z] Building nodejs source
+[debug] [2023-06-10T22:38:12.565Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:38:12.566Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:38:12.567Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:38:12.683Z] Serving at port 8823
+
+[debug] [2023-06-10T22:38:12.764Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:38:12.767Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:41:29.011Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:41:30.015Z] Validating nodejs source
+[debug] [2023-06-10T22:41:30.487Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:41:30.488Z] Building nodejs source
+[debug] [2023-06-10T22:41:30.488Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:41:30.489Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:41:30.490Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:41:30.613Z] Serving at port 8222
+
+[debug] [2023-06-10T22:41:30.704Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:41:30.706Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:41:49.636Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:41:49.636Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:41:49.637Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:41:49.636Z"],"workRunningCount":1}
+[debug] [2023-06-10T22:41:49.637Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=location --> us-central1-placesNearby
+[debug] [2023-06-10T22:41:49.639Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T22:41:49.640Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=location, mapping to path=/?location=location {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=location, mapping to path=/?location=location"}}
+[debug] [2023-06-10T22:41:49.640Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2023-06-10T22:41:49.646Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:41:49.647Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2023-06-10T22:41:50.220Z] [runtime-status] [99651] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.220Z] [runtime-status] [99651] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.220Z] [runtime-status] [99651] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T22:41:50.221Z] [runtime-status] [99651] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.325Z] [runtime-status] [99651] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T22:41:50.325Z] [runtime-status] [99651] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T22:41:50.325Z] [runtime-status] [99651] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.325Z] [runtime-status] [99651] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.326Z] [runtime-status] [99651] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:41:50.326Z] [runtime-status] [99651] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T22:41:50.334Z] [runtime-status] [99651] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T22:41:50.334Z] [runtime-status] [99651] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e6b1f6d64cde31d7.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99651] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e6b1f6d64cde31d7.sock"}}
+[debug] [2023-06-10T22:41:50.360Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: IDLE"}}
+[debug] [2023-06-10T22:41:50.360Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T22:41:50.361Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: BUSY"}}
+[debug] [2023-06-10T22:41:50.366Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 5.319666ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 5.319666ms"}}
+[debug] [2023-06-10T22:41:50.366Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: IDLE"}}
+[debug] [2023-06-10T22:41:50.366Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T22:41:50.366Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T22:41:50.366Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:42:32.322Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:42:33.325Z] Validating nodejs source
+[debug] [2023-06-10T22:42:33.912Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:42:33.912Z] Building nodejs source
+[debug] [2023-06-10T22:42:33.912Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:42:33.913Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:42:33.914Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:42:34.057Z] Serving at port 8421
+
+[debug] [2023-06-10T22:42:34.136Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:42:34.142Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:42:34.149Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:42:34.149Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: FINISHING"}}
+[debug] [2023-06-10T22:42:34.155Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: exited"}}
+[debug] [2023-06-10T22:42:34.155Z] [worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-ca954981-d284-41d1-9c59-bcf859fd2858]: FINISHED"}}
+[debug] [2023-06-10T22:43:08.150Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:43:08.149Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:43:08.151Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:43:08.149Z"],"workRunningCount":1}
+[debug] [2023-06-10T22:43:08.151Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799 --> us-central1-placesNearby
+[debug] [2023-06-10T22:43:08.152Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T22:43:08.153Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799"}}
+[debug] [2023-06-10T22:43:08.153Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2023-06-10T22:43:08.158Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:43:08.159Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2023-06-10T22:43:08.737Z] [runtime-status] [99701] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.738Z] [runtime-status] [99701] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.738Z] [runtime-status] [99701] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T22:43:08.738Z] [runtime-status] [99701] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.843Z] [runtime-status] [99701] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T22:43:08.843Z] [runtime-status] [99701] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T22:43:08.843Z] [runtime-status] [99701] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.844Z] [runtime-status] [99701] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.845Z] [runtime-status] [99701] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:43:08.845Z] [runtime-status] [99701] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T22:43:08.853Z] [runtime-status] [99701] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T22:43:08.853Z] [runtime-status] [99701] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e6de6ee5dd1c554a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [99701] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e6de6ee5dd1c554a.sock"}}
+[debug] [2023-06-10T22:43:08.873Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: IDLE"}}
+[debug] [2023-06-10T22:43:08.873Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T22:43:08.874Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: BUSY"}}
+[debug] [2023-06-10T22:43:08.878Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 4.0725ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 4.0725ms"}}
+[debug] [2023-06-10T22:43:08.879Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: IDLE"}}
+[debug] [2023-06-10T22:43:08.879Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T22:43:08.879Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T22:43:08.879Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:45:53.569Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:45:54.573Z] Validating nodejs source
+[debug] [2023-06-10T22:45:55.070Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:45:55.070Z] Building nodejs source
+[debug] [2023-06-10T22:45:55.070Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:45:55.071Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:45:55.072Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:45:55.185Z] Serving at port 8956
+
+[debug] [2023-06-10T22:45:55.272Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:45:55.275Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:45:55.277Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:45:55.277Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: FINISHING"}}
+[debug] [2023-06-10T22:45:55.283Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: exited"}}
+[debug] [2023-06-10T22:45:55.283Z] [worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b2eb7cbe-2878-40ff-98e6-cd2309790d53]: FINISHED"}}
+[debug] [2023-06-10T22:47:21.569Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:47:22.576Z] Validating nodejs source
+[debug] [2023-06-10T22:47:23.072Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:47:23.072Z] Building nodejs source
+[debug] [2023-06-10T22:47:23.073Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:47:23.074Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:47:23.074Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:47:23.188Z] Serving at port 8379
+
+[debug] [2023-06-10T22:47:23.271Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:47:23.276Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:49:26.950Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:49:27.958Z] Validating nodejs source
+[debug] [2023-06-10T22:49:28.570Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:49:28.571Z] Building nodejs source
+[debug] [2023-06-10T22:49:28.571Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:49:28.572Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:49:28.573Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:49:28.687Z] Serving at port 8915
+
+[debug] [2023-06-10T22:49:28.773Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:49:28.776Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:49:42.471Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:49:43.475Z] Validating nodejs source
+[debug] [2023-06-10T22:49:43.942Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:49:43.942Z] Building nodejs source
+[debug] [2023-06-10T22:49:43.942Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:49:43.944Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:49:43.944Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:49:44.042Z] Serving at port 8910
+
+[debug] [2023-06-10T22:49:44.123Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:49:44.126Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:52:04.714Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/mock/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:52:05.739Z] Validating nodejs source
+[debug] [2023-06-10T22:52:06.298Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:52:06.298Z] Building nodejs source
+[debug] [2023-06-10T22:52:06.298Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:52:06.299Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:52:06.300Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:52:06.420Z] Serving at port 8540
+
+[debug] [2023-06-10T22:52:06.520Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:52:06.523Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:59:25.256Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T22:59:26.271Z] Validating nodejs source
+[debug] [2023-06-10T22:59:26.911Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T22:59:26.912Z] Building nodejs source
+[debug] [2023-06-10T22:59:26.912Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T22:59:26.913Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T22:59:26.914Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T22:59:27.021Z] Serving at port 8914
+
+[debug] [2023-06-10T22:59:27.106Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T22:59:27.108Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T22:59:40.917Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:59:40.916Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T22:59:40.918Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T22:59:40.916Z"],"workRunningCount":1}
+[debug] [2023-06-10T22:59:40.919Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799 --> us-central1-placesNearby
+[debug] [2023-06-10T22:59:40.921Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T22:59:40.923Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=41.878113,-87.629799, mapping to path=/?location=41.878113,-87.629799"}}
+[debug] [2023-06-10T22:59:40.923Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2023-06-10T22:59:40.934Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2023-06-10T22:59:40.938Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2023-06-10T22:59:41.557Z] [runtime-status] [417] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.557Z] [runtime-status] [417] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.558Z] [runtime-status] [417] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T22:59:41.558Z] [runtime-status] [417] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.674Z] [runtime-status] [417] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T22:59:41.674Z] [runtime-status] [417] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T22:59:41.674Z] [runtime-status] [417] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.674Z] [runtime-status] [417] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.676Z] [runtime-status] [417] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T22:59:41.676Z] [runtime-status] [417] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T22:59:41.685Z] [runtime-status] [417] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T22:59:41.685Z] [runtime-status] [417] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_6520196e06353f83.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [417] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_6520196e06353f83.sock"}}
+[debug] [2023-06-10T22:59:41.767Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: IDLE"}}
+[debug] [2023-06-10T22:59:41.767Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T22:59:41.768Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: BUSY"}}
+[debug] [2023-06-10T22:59:41.774Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 5.535208ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 5.535208ms"}}
+[debug] [2023-06-10T22:59:41.774Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: IDLE"}}
+[debug] [2023-06-10T22:59:41.774Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T22:59:41.774Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T22:59:41.774Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:00:26.721Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T23:00:27.725Z] Validating nodejs source
+[debug] [2023-06-10T23:00:28.193Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T23:00:28.193Z] Building nodejs source
+[debug] [2023-06-10T23:00:28.193Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T23:00:28.194Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T23:00:28.194Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T23:00:28.314Z] Serving at port 8027
+
+[debug] [2023-06-10T23:00:28.395Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Invalid left-hand side in assignment
+[debug] [2023-06-10T23:00:28.397Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Invalid left-hand side in assi ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Invalid left-hand side in assignment\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Invalid left-hand side in assi ... \n                                         ^"}
+[debug] [2023-06-10T23:00:28.399Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Invalid left-hand side in assignment {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Invalid left-hand side in assignment"}}
+[debug] [2023-06-10T23:01:47.200Z] File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/connieskomra/Documents/code/MealsToGo/functions/places/index.js changed, reloading triggers"}}
+[debug] [2023-06-10T23:01:48.203Z] Validating nodejs source
+[debug] [2023-06-10T23:01:48.653Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-10T23:01:48.653Z] Building nodejs source
+[debug] [2023-06-10T23:01:48.653Z] Failed to find version of module node: reached end of search path /Users/connieskomra/Documents/code/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2023-06-10T23:01:48.654Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-10T23:01:48.655Z] Found firebase-functions binary at '/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-06-10T23:01:48.768Z] Serving at port 8993
+
+[debug] [2023-06-10T23:01:48.851Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-10T23:01:48.853Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-06-10T23:01:48.856Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2023-06-10T23:01:48.856Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: FINISHING"}}
+[debug] [2023-06-10T23:01:48.863Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: exited"}}
+[debug] [2023-06-10T23:01:48.864Z] [worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-b3e46119-d7d4-4a02-9f20-feda53d011ad]: FINISHED"}}
+[debug] [2023-06-10T23:04:05.320Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:04:05.320Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:04:05.321Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:04:05.320Z"],"workRunningCount":1}
+[debug] [2023-06-10T23:04:05.321Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2023-06-10T23:04:05.322Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T23:04:05.322Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2023-06-10T23:04:05.322Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2023-06-10T23:04:05.325Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2023-06-10T23:04:05.325Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2023-06-10T23:04:06.010Z] [runtime-status] [572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.010Z] [runtime-status] [572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.010Z] [runtime-status] [572] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T23:04:06.011Z] [runtime-status] [572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.131Z] [runtime-status] [572] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T23:04:06.131Z] [runtime-status] [572] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T23:04:06.131Z] [runtime-status] [572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.131Z] [runtime-status] [572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.133Z] [runtime-status] [572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:04:06.133Z] [runtime-status] [572] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T23:04:06.141Z] [runtime-status] [572] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T23:04:06.141Z] [runtime-status] [572] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_7938ac2dc5c1c847.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [572] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_7938ac2dc5c1c847.sock"}}
+[debug] [2023-06-10T23:04:06.161Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE"}}
+[debug] [2023-06-10T23:04:06.161Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T23:04:06.162Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY"}}
+[debug] [2023-06-10T23:04:06.165Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 3.864542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 3.864542ms"}}
+[debug] [2023-06-10T23:04:06.166Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE"}}
+[debug] [2023-06-10T23:04:06.166Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T23:04:06.166Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T23:04:06.166Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:05:39.087Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:05:39.087Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:05:39.088Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:05:39.087Z"],"workRunningCount":1}
+[debug] [2023-06-10T23:05:39.088Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2023-06-10T23:05:39.089Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T23:05:39.090Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2023-06-10T23:05:39.090Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T23:05:39.091Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY"}}
+[debug] [2023-06-10T23:05:39.096Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 4.819417ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 4.819417ms"}}
+[debug] [2023-06-10T23:05:39.096Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE"}}
+[debug] [2023-06-10T23:05:39.096Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T23:05:39.096Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T23:05:39.096Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:06:07.459Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/geocode-2023-06-10T23:06:07.458Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:06:07.460Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/geocode-2023-06-10T23:06:07.458Z"],"workRunningCount":1}
+[debug] [2023-06-10T23:06:07.460Z] Accepted request GET /mealstogo-3f887/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2023-06-10T23:06:07.461Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T23:06:07.462Z] [functions] Got req.url=/mealstogo-3f887/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2023-06-10T23:06:07.470Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-06-10T23:06:07.470Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-06-10T23:06:08.120Z] [runtime-status] [675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.120Z] [runtime-status] [675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.120Z] [runtime-status] [675] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-10T23:06:08.121Z] [runtime-status] [675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.233Z] [runtime-status] [675] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-10T23:06:08.233Z] [runtime-status] [675] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-06-10T23:06:08.234Z] [runtime-status] [675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.234Z] [runtime-status] [675] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.235Z] [runtime-status] [675] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-06-10T23:06:08.235Z] [runtime-status] [675] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"/Users/connieskomra/Documents/code/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-06-10T23:06:08.244Z] [runtime-status] [675] Functions runtime initialized. {"cwd":"/Users/connieskomra/Documents/code/MealsToGo/functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Functions runtime initialized. {\"cwd\":\"/Users/connieskomra/Documents/code/MealsToGo/functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-10T23:06:08.244Z] [runtime-status] [675] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e622b105a98244f8.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [675] Listening to port: /var/folders/4x/wvjxrs3x1ks00h3whq6bwd_w0000gn/T/fire_emu_e622b105a98244f8.sock"}}
+[debug] [2023-06-10T23:06:08.288Z] [worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: IDLE"}}
+[debug] [2023-06-10T23:06:08.288Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[info] i  functions: Beginning execution of "us-central1-geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"us-central1-geocode\""}}
+[debug] [2023-06-10T23:06:08.289Z] [worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: BUSY"}}
+[debug] [2023-06-10T23:06:08.293Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-geocode" in 4.653834ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"us-central1-geocode\" in 4.653834ms"}}
+[debug] [2023-06-10T23:06:08.294Z] [worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-aa1ef387-db5f-4d03-909e-88b7c9e5dd02]: IDLE"}}
+[debug] [2023-06-10T23:06:08.294Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T23:06:08.294Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T23:06:08.294Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:06:08.839Z] [work-queue] {"queuedWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:06:08.839Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-10T23:06:08.839Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-3f887/us-central1/placesNearby-2023-06-10T23:06:08.839Z"],"workRunningCount":1}
+[debug] [2023-06-10T23:06:08.839Z] Accepted request GET /mealstogo-3f887/us-central1/placesNearby?location=51.219448,4.402464 --> us-central1-placesNearby
+[debug] [2023-06-10T23:06:08.840Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-10T23:06:08.840Z] [functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=51.219448,4.402464, mapping to path=/?location=51.219448,4.402464 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-3f887/us-central1/placesNearby?location=51.219448,4.402464, mapping to path=/?location=51.219448,4.402464"}}
+[debug] [2023-06-10T23:06:08.840Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2023-06-10T23:06:08.842Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: BUSY"}}
+[debug] [2023-06-10T23:06:08.853Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 11.988584ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 11.988584ms"}}
+[debug] [2023-06-10T23:06:08.854Z] [worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-5c6b5f3a-5a7d-46c3-a216-b08d23ec0759]: IDLE"}}
+[debug] [2023-06-10T23:06:08.854Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-10T23:06:08.854Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-10T23:06:08.854Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
