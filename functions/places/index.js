@@ -35,8 +35,8 @@ module.exports.placesRequest = (request, response, client) => {
     },
     timeout: 1_000
   }).then(res => {
-    // res.data.results = res.data.results.map(addGoogleImage);
-    res.data.results = res.data.results.map(addMockImage);
+    res.data.results = res.data.results.map(addGoogleImage);
+    // res.data.results = res.data.results.map(addMockImage);
     return response.json(res.data);
   }).catch(e => {
     response.status(400);
