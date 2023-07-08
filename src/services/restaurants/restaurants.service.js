@@ -1,12 +1,9 @@
 import camelize from "camelize";
-import { placesNearbyHost } from "../../utils/env";
+import { placesNearbyHost, isMock } from "../../utils/env";
 
 export const restaurantsRequest = (location) => {
-  // const local = 'http://localhost:5001/mealstogo-3f887/us-central1';
-  // const live = 'https://placesnearby-4yz3yjmjhq-uc.a.run.app';
-  // const host = process.env.NODE_ENV === 'development' ? local : live;
   return fetch(
-    `${placesNearbyHost}/placesNearby?location=${location}`
+    `${placesNearbyHost}/placesNearby?location=${location}&mock=${isMock}`
     ).then((res) => res.json());
 };
 
